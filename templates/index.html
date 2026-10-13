@@ -142,7 +142,12 @@
     <div class="modal-card">
       <div class="modal-heart">♡</div>
       <p id="modal-caption">Un recuerdo para guardar.</p>
-      <small>Cuando quieras, añade aquí vuestra foto real 🩵</small>
+      
+      <!-- FOTO PERSONAL CARGADA DESDE STATIC/IMG/AY.JPEG -->
+      <div class="personal-photo-wrapper" style="margin: 15px 0; text-align: center;">
+        <img src="{{ url_for('static', filename='img/ay.jpeg') }}" alt="Foto con Ayuya 🩵" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); border: 4px solid #fff;">
+      </div>
+
     </div>
   </div>
 
