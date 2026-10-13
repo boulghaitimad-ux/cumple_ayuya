@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#071a35">
+  <meta name="description" content="Una pequeña sorpresa de cumpleaños para mi Ayuya 🩵">
+  <title>Para mi Ayuya 🩵</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <canvas id="heart-canvas" aria-hidden="true"></canvas>
+  <div class="ambient-glow glow-one" aria-hidden="true"></div>
+  <div class="ambient-glow glow-two" aria-hidden="true"></div>
+  
+  <header class="topbar">
+    <div class="brand"><span class="brand-heart">♡</span> para mi Ayuya</div>
+    <button id="music-toggle" class="music-toggle" type="button" aria-label="Reproducir música" hidden>
+      <span class="music-dot"></span><span id="music-label">Música</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="screen screen-welcome active" id="welcome" aria-labelledby="welcome-title">
+      <div class="welcome-content">
+        <div class="eyebrow"><span></span> UNA PEQUEÑA SORPRESA <span></span></div>
+        <div class="hero-heart" aria-hidden="true">
+          <div class="heart-core">♥</div>
+          <i class="orbit orbit-a"></i>
+          <i class="orbit orbit-b"></i>
+        </div>
+        <h1 id="welcome-title">Hola, mi <em>Ayuya</em> <span class="blue-heart">🩵</span></h1>
+        <p class="lead">He preparado una pequeña sorpresa para ti...</p>
+        <button id="start-btn" class="primary-btn" type="button">Pulsa aquí, mi niña <span>🩵</span><b>↗</b></button>
+        <p class="tiny-note">hecho con mucho cariño, solo para ti</p>
+      </div>
+      <div class="scroll-hint">TU SORPRESA TE ESPERA <span>↓</span></div>
+    </section>
+
+    <section class="screen screen-heart" id="heart-scene" aria-labelledby="birthday-title" aria-hidden="true">
+      <div class="heart-scene-content">
+        <div class="scene-kicker">HOY CELEBRAMOS A ALGUIEN MUY ESPECIAL</div>
+        <div class="heart-message">
+          <h2 id="birthday-title">¡FELIZ<br>CUMPLEAÑOS!</h2>
+          <p class="name-script">AYUYA <span>🩵</span></p>
+          <p class="inside-note">Hoy es tu día, mi niña bonita 🎂</p>
+        </div>
+        <p class="scene-caption">Ojalá pudiera ver esa sonrisa ahora mismo.</p>
+        <button id="more-btn" class="primary-btn" type="button">Todavía tengo algo más para ti <span>💌</span><b>↗</b></button>
+      </div>
+    </section>
+
+    <section class="screen screen-letter" id="letter-scene" aria-labelledby="letter-title" aria-hidden="true">
+      <div class="section-heading">
+        <div class="eyebrow"><span></span> UNAS PALABRAS PARA TI <span></span></div>
+        <h2 id="letter-title">He escrito algo para ti,<br><em>mi Ayuya</em> 🩵</h2>
+        <p>Hay cosas que merecen decirse despacito.</p>
+      </div>
+      <div class="envelope-wrap">
+        <div class="envelope" id="envelope">
+          <div class="envelope-back"></div>
+          <div class="letter-paper">
+            <div class="letter-top">PARA MI AYUUUYAAA <span>♡</span></div>
+            <div class="letter-copy" id="letter-copy">
+              <p>Feliz cumpleaños, mi AYUYA 🩵</p>
+              <p>FELIZ CUMPLEEEEE, MI AYUYAAAAA 🩵🥹🫶🏻💗</p>
+              <p>Tía, de verdad, no sé ni por dónde empezar JAJAJAJAJA. Es que me pongo a pensar en todo y me parece muy fuerte que nos conozcamos desde 2022. ¿Te das cuenta de todo el tiempo que ha pasado desde entonces? 😭💗 Y pensar que todo empezó un 12 de octubre, más o menos, cuando empezamos a hablar por primera vez, en aquella época en la que hablábamos de lo que estaba pasando en Palestina y del Free Palestine. Quién nos iba a decir que, a partir de aquel primer mensaje, acabaríamos compartiendo tantas cosas y que llegarías a ser una persona tan especial para mí.</p>
+              <p>Es que, sinceramente, nunca sabes cómo van a empezar las historias más bonitas de tu vida. A veces empiezan con una conversación cualquiera, sin que te imagines que esa persona va a seguir formando parte de tu vida años después. Y mira nosotras JAJAJAJAJA. Desde 2022 hasta ahora, con todo lo que hemos vivido, las conversaciones, las risas, los momentos buenos y también los no tan buenos. Si me hubieran dicho aquel día que años después estaría escribiéndote una carta por tu cumpleaños, no sé si me lo habría creído JAJAJAJA.</p>
+              <p>Pero bueno, hoy es tu día, mi Ayuya, y no quería dejar pasar la oportunidad de decirte algunas cosas que quizás no te digo tanto como debería. Lo primero de todo: gracias por existir, de verdad. Gracias por haber aparecido en mi vida y por ser parte de ella. Me alegro muchísimo de haberte conocido y de que, entre tanta gente que hay en el mundo, nuestros caminos se cruzaran aquel año. Porque, aunque parezca una tontería, conocer a alguien que termina significando tanto para ti es algo muy bonito.</p>
+              <p>Quiero darte las gracias por todo lo que has hecho por mí, especialmente por haber estado ahí en momentos en los que no estaba bien. Por escucharme cuando necesitaba hablar, por aguantar mis rayadas y por acompañarme incluso cuando ni yo misma sabía cómo explicar lo que me pasaba. A lo mejor tú no te das cuenta de lo mucho que me has ayudado, pero hay cosas que una recuerda, y para mí es muy importante no olvidar a las personas que han estado ahí cuando las necesitaba. Y tú eres una de ellas.</p>
+              <p>También quiero que sepas que valoro muchísimo todo lo que hemos construido desde que empezamos a hablar. Porque obviamente no todo ha sido perfecto, hemos tenido nuestros momentos, nuestros problemas, nuestros malentendidos y nuestras rayadas JAJAJAJAJA, pero supongo que todo eso también forma parte de conocerse de verdad. Al final, cuando llevas tanto tiempo conociendo a alguien, compartes un montón de etapas, y es bonito mirar atrás y darte cuenta de que esa persona ha estado presente en una parte importante de tu vida.</p>
+              <p>Y es que cuatro años dan para muchísimo, tía. Hemos cambiado, hemos vivido cosas y seguramente ya no somos exactamente las mismas personas que éramos en 2022. Pero me hace mucha ilusión pensar que hay personas que conociste hace tiempo y que siguen teniendo un lugar especial en tu vida. Y tú eres una de esas personas para mí, Ayuya. No sé si te lo digo lo suficiente, pero te tengo muchísimo cariño y me alegro de tenerte conmigo.</p>
+              <p>Gracias por las veces que me has hecho reír, por las conversaciones que se nos han ido de las manos, por escucharme, por confiar en mí y por todos esos momentos que quizás para otra persona no significarían gran cosa, pero que forman parte de nuestra historia. Porque al final no son solamente los grandes momentos los que hacen que alguien sea importante, sino también todas esas pequeñas cosas que se van acumulando con el tiempo sin que te des cuenta.</p>
+              <p>Y, tía, de verdad, espero que nunca dudes de lo mucho que vales. A veces nos centramos tanto en nuestros problemas y en las cosas que nos salen mal que se nos olvida reconocer todo lo bueno que tenemos. Por eso, hoy, en tu cumpleaños, quiero recordarte que mereces muchísimas cosas bonitas. Mereces ser feliz, estar tranquila, cumplir tus sueños y rodearte de personas que te quieran de verdad. Mereces que te pasen cosas buenas y que la vida te sorprenda de esas maneras que te hacen sonreír sin poder evitarlo.</p>
+              <p>Ojalá este nuevo año de tu vida venga cargado de felicidad, salud, amor, oportunidades y muchísimos momentos que te hagan sentir orgullosa de ti misma. Ojalá consigas todo lo que te propongas, que nunca te falten fuerzas para seguir adelante y que, incluso en los días malos, encuentres algo que te recuerde que las cosas pueden mejorar. Y si alguna vez las cosas no salen como esperabas, recuerda que no tienes que tenerlo todo resuelto ni estar bien siempre. También tienes derecho a tener días malos, a descansar y a dejar que las personas que te quieren estén ahí para ti.</p>
+              <p>Espero que hoy te sientas muy querida, porque te lo mereces muchísimo. Que disfrutes de tu día, que te rías un montón, que te den muchos abrazos y que te consientan todo lo posible JAJAJAJAJA. Que para eso es tu cumpleaños, mujer. 😭💗</p>
+              <p>Y, sinceramente, no sé qué pasará dentro de otros cuatro años ni cómo estaremos entonces. La vida cambia muchísimo y nunca sabemos lo que nos espera. Pero sí sé que me alegro de haber coincidido contigo en 2022 y de haber podido conocerte durante todo este tiempo. Me quedo con eso, con haber compartido una parte de nuestras vidas y con todos los recuerdos que hemos ido creando desde aquel primer mensaje.</p>
+              <p>Me parece muy bonito que algo que empezó de una manera tan normal se haya convertido en una historia que hoy puedo recordar con tanto cariño. Y, aunque seguramente aquel 12 de octubre no nos pareció una fecha tan importante en ese momento, ahora tiene ese pequeño significado de ser el principio de todo. JAJAJAJAJA, quién nos iba a decir que terminaríamos así. 🥹🩵</p>
+              <p>Así que nada, mi Ayuya, que podría seguir escribiendo muchísimo más, pero tampoco quiero hacerte leer aquí la Biblia entera JAJAJAJAJA. Simplemente quería que hoy tuvieras unas palabras bonitas y que supieras que me alegro muchísimo de que existas y de que formes parte de mi vida.</p>
+              <p>Gracias por aquel primer mensaje en 2022, gracias por todos estos años y, sobre todo, gracias por ser tú. Espero que cumplas muchísimos años más, que seas muy feliz y que la vida te regale todo aquello que tu corazón desea.</p>
+              <p>Y que viva Palestina libre, que viva aquel 12 de octubre y que vivan las casualidades que hacen que conozcamos a personas que terminan siendo tan importantes para nosotros. 🇵🇸🩵</p>
+              <p>FELIZ CUMPLEEEEE, MI AYUYAAAAA. 🥹💗🫶🏻</p>
+              <p>Te quiero muchísimo, tía. Espero que nunca se te olvide lo especial que eres y que este nuevo año de vida sea uno de esos que recuerdes siempre con una sonrisa.</p>
+              <p>GRACIAS POR EXISTIR, MI NIÑAAAA. FELICES CUMPLEAÑOSSSS. 🩵🫂💗</p>
+            </div>
+            <div class="letter-sign">Con todo mi cariño, <span>♡</span></div>
+          </div>
+          <div class="envelope-front"></div>
+          <div class="envelope-flap"></div>
+          <div class="wax-seal">🩵</div>
+        </div>
+        <button id="open-letter" class="primary-btn" type="button">Abrir mi carta <span>💌</span><b>↗</b></button>
+      </div>
+      <button id="memories-btn" class="text-btn hidden" type="button">Tengo más recuerdos para ti 🩵 <span>→</span></button>
+    </section>
+
+    <section class="screen screen-memories" id="memories-scene" aria-labelledby="memories-title" aria-hidden="true">
+      <div class="section-heading">
+        <div class="eyebrow"><span></span> NUESTRO PEQUEÑO RINCÓN <span></span></div>
+        <h2 id="memories-title">Un rinconcito<br>para <em>nosotros</em> 🩵</h2>
+        <p>Un día llenaremos este espacio de nuestros momentos favoritos.</p>
+      </div>
+      <div class="polaroid-grid">
+        <button class="polaroid" type="button" data-caption="Aquí irá uno de nuestros recuerdos 🩵">
+          <span class="photo-placeholder"><span class="placeholder-icon">♡</span><small>UN RECUERDO POR AÑADIR</small></span><span class="polaroid-note">Aquí irá uno de nuestros recuerdos 🩵</span>
+        </button>
+        <button class="polaroid tilt-right" type="button" data-caption="Un momento que quiero guardar para siempre.">
+          <span class="photo-placeholder photo-two"><span class="placeholder-icon">✧</span><small>UN MOMENTO NUESTRO</small></span><span class="polaroid-note">Un momento que quiero guardar para siempre.</span>
+        </button>
+        <button class="polaroid tilt-left" type="button" data-caption="Pequeños instantes que significan mucho.">
+          <span class="photo-placeholder photo-three"><span class="placeholder-icon">🩵</span><small>PRÓXIMAMENTE</small></span><span class="polaroid-note">Pequeños instantes que significan mucho.</span>
+        </button>
+      </div>
+      <button id="wish-btn" class="primary-btn" type="button">Aún queda una sorpresa <span>✨</span><b>↗</b></button>
+      <p class="tiny-note">Estos espacios son tuyos: añade vuestras fotos cuando quieras.</p>
+    </section>
+
+    <section class="screen screen-wish" id="wish-scene" aria-labelledby="wish-title" aria-hidden="true">
+      <div class="wish-content">
+        <div class="wish-heart" aria-hidden="true">♥<span>✧</span></div>
+        <div class="eyebrow"><span></span> MI DESEO PARA TI <span></span></div>
+        <h2 id="wish-title">Que nunca te falten<br>motivos para <em>sonreír.</em> 🩵</h2>
+        <p>Feliz cumpleaños, Ayuya.<br>Gracias por ser tú.</p>
+        <button id="final-btn" class="primary-btn" type="button">Una última sorpresa <span>✨</span><b>↗</b></button>
+      </div>
+    </section>
+
+    <section class="screen screen-final" id="final-scene" aria-labelledby="final-title" aria-hidden="true">
+      <div class="final-content">
+        <div class="final-sparkle">✧</div>
+        <div class="final-heart" aria-hidden="true">♥</div>
+        <div class="eyebrow"><span></span> SIEMPRE CON CARIÑO <span></span></div>
+        <h2 id="final-title">Te quiero muchísimo,<br><em>mi Alita de Pollo.</em> 🩵</h2>
+        <p>Espero que esta pequeña sorpresa te haya sacado una sonrisa.<br>Feliz cumpleaños, mi niña bonita. 🎂</p>
+        <button id="restart-btn" class="secondary-btn" type="button">Volver a vivir la sorpresa <span>↻</span></button>
+      </div>
+    </section>
+  </main>
+
+  <div id="photo-modal" class="photo-modal" role="dialog" aria-modal="true" aria-label="Detalle del recuerdo" hidden>
+    <button id="modal-close" class="modal-close" type="button" aria-label="Cerrar recuerdo">×</button>
+    <div class="modal-card">
+      <div class="modal-heart">♡</div>
+      <p id="modal-caption">Un recuerdo para guardar.</p>
+      <small>Cuando quieras, añade aquí vuestra foto real 🩵</small>
+    </div>
+  </div>
+
+  <audio id="birthday-music" preload="none" loop>
+    <source src="{{ url_for('static', filename='audio/musica.mp3') }}" type="audio/mpeg">
+  </audio>
+
+  <script src="{{ url_for('static', filename='js/hearts.js') }}" defer></script>
+  <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+</body>
+</html>
